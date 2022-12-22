@@ -92,7 +92,7 @@ const checkOutHandler = async (req, res, next) => {
     return next(error);
   }
 
-  res.status(201).json({ cart: existingUserCart });
+  res.status(201).json({ user: existingUser, cart: existingUserCart });
 };
 
 exports.checkOutHandler = checkOutHandler;
